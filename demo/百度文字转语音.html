@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+
+<head>
+          
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+          <title>语音测试</title>
+      
+</head>
+
+<body>
+          <div>
+                <input type="text" id="ttsText" value="">
+                <input type="button" id="tts_btn" onclick="doTTS1()" value="播放">
+            </div>
+          <div id="bdtts_div_id">
+                <audio id="tts_autio_id" autoplay="autoplay">
+                      
+      <source id="tts_source_id" src="http://tts.baidu.com/text2audio?lan=zh&ie=UTF-8&spd=4&text=" type="audio/mpeg">
+                      <embed id="tts_embed_id" height="0" width="0" src="">
+       
+    </audio>
+            </div>
+      </body>
+    
+<script type="text/javascript">
+  /**
+   * 谷歌高版本浏览器不支持声音自动播放，必须用户发生交互之后，才可以播放声音
+  */
+  function doTTS() {
+    var ttsDiv = document.getElementById('bdtts_div_id');
+    var ttsAudio = document.getElementById('tts_autio_id');
+    var ttsText = document.getElementById('ttsText').value;
+
+    ttsDiv.removeChild(ttsAudio);
+    var au1 = '<audio id="tts_autio_id" autoplay="autoplay">';
+    var sss = '<source id="tts_source_id" src="http://tts.baidu.com/text2audio?lan=Zh&ie=UTF-8&spd=4&text=' + ttsText + '" type="audio/mpeg">';
+    var eee = '<embed id="tts_embed_id" height="0" width="0" src="">';
+    var au2 = '</audio>';
+    ttsDiv.innerHTML = au1 + sss + eee + au2;
+
+    ttsAudio = document.getElementById('tts_autio_id');
+
+    ttsAudio.play();
+  }
+  setTimeout(() => {
+    document.getElementById("tts_autio_id").play()
+  }, 2000);
+  function doTTS1() {
+    var ttsDiv = document.getElementById('bdtts_div_id');
+    var ttsAudio = document.getElementById('tts_autio_id');
+    var ttsText = document.getElementById('ttsText').value;
+
+    ttsDiv.removeChild(ttsAudio);
+    var au1 = '<audio id="tts_autio_id" autoplay="autoplay">';
+    var sss = '<source id="tts_source_id" src="http://tts.baidu.com/text2audio?lan=Zh&ie=UTF-8&spd=4&text=' + ttsText + '" type="audio/mpeg">';
+    var eee = '<embed id="tts_embed_id" height="0" width="0" src="">';
+    var au2 = '</audio>';
+    ttsDiv.innerHTML = au1 + sss + eee + au2;
+
+    ttsAudio = document.getElementById('tts_autio_id');
+
+    ttsAudio.play();
+  }
+</script>
+
+</html>

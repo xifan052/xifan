@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>number</title>
+	<style>
+	
+		h2 {
+			height: 40px;
+			background-color: #f5f5f5;
+			position: relative;
+		}
+		span {
+			width: 25px;
+			display: inline-block;
+			height: 40px;
+			overflow: hidden;
+			position: relative;
+		}
+		span:before {
+			content: '0123456789';
+			display: block;
+			width: 25px;
+			line-height: 40px;
+			top: 0px;
+			word-break: break-all;
+			position: absolute;
+			display: block;
+		}
+		span.num-2:before {
+			transition: top 1.2s ease-in;
+			top: -80px;
+		}
+		span.num-6:before {
+			transition: top 1.2s ease-in;
+			top: -240px;
+		}
+	</style>
+</head>
+<body>
+		<h2>
+			<span id="n1" class="num"></span>
+			<span id="n2" class="num"></span>
+		</h2>
+	<script>
+		var oS1 = document.getElementById('n1');
+		var oS2 = document.getElementById('n2');
+		setTimeout(function () {
+			oS1.className = oS1.className + ' num-2';
+			oS2.className = oS2.className + ' num-6';
+		}, 1000)
+		
+	</script>
+</body>
+</html>
