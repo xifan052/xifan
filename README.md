@@ -15,19 +15,29 @@
 
 ## 1.前端框架
 
-- [Vue](./resources/vue/1.vue框架对比.md)
+### 1.1 Vue
+
+- [Vue 官网](https://cn.vuejs.org/)
+
+- [vue 修炼秘籍](./resources/vue/1.vue框架对比.md)
 
 **[:arrow_up: 返回目录](#目录)**
 
 ### 1.2 React
 
+- [React 中文网](https://react.docschina.org/docs/getting-started.html)
+
 **[:arrow_up: 返回目录](#目录)**
 
 ## 2.Typescript
 
+- [Typescript 中文网](https://www.tslang.cn/docs/home.html)
+
 **[:arrow_up: 返回目录](#目录)**
 
 ## 3.Node
+
+- [Node 中文网](http://nodejs.cn/)
 
 **[:arrow_up: 返回目录](#目录)**
 
