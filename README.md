@@ -33,7 +33,7 @@
 
 - [Typescript 中文网](https://www.tslang.cn/docs/home.html)
 
-- [初识Typescript](./resources/typescript/1.安装编译.md)
+- [Typescript 修炼手册](./resources/typescript修炼手册/1.什么是typescript.md)
 
 **[:arrow_up: 返回目录](#目录)**
 
